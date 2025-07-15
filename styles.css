@@ -12,6 +12,10 @@
 body {
     background-color: var(--Slate300);
     font-family: "Outfit", sans-serif;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 .container {
     background-color: var(--White);
@@ -46,14 +50,4 @@ body {
     height: 3.25rem;
     font-weight: 400;
     color: var(--Slate500);
-}
-@media (min-width: 1440px) {    
-    .container{
-        margin: 230.5px auto;
-    }
-}
-@media (min-width: 375px) {
-    .container{
-        margin: 156.5px auto;
-    }
 }
