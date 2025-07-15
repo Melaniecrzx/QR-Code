@@ -1,53 +1,60 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 :root {
     --White: hsl(0, 0%, 100%);
     --Slate300: hsl(212, 45%, 89%);
     --Slate500: hsl(216, 15%, 48%);
     --Slate900: hsl(218, 44%, 22%);
 }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: var(--Slate300);
     font-family: "Outfit", sans-serif;
-    font-size: 15px;
 }
 .container {
     background-color: var(--White);
-    width: 320px;
-    height: 499px;
-    margin: 10% auto;
-    border-radius: 20px;
+    width: 20rem;
+    height: 31rem;
+    border-radius: 1.25rem;
 }
 .qr-image {
-    border-radius: 10px;
-    width: 288px;
-    height: 288px;
-    margin: 16px 16.40px 24px;
-}
-.title {
-    font-size: 20px;
-    width: 256px;
-    height: 52px;
-    font-weight: 700;
-    margin: auto;
-    color: var(--Slate900);
-    margin-bottom: 16px;
-}
-.instruction {
-    font-size: 15px;
-    width: 256px;
-    height: 63px;
-    font-weight: 400;
-    margin: auto;
-    color: var(--Slate500);
+    border-radius: 0.625rem;
+    border: 2px solid black;
+    width: 18rem;
+    height: 18rem;
+    margin: 1rem 1rem 1.5rem 1rem;
 }
 .description {
     text-align: center;
-    padding: 0 16px; 
-    margin-bottom: 40px;
-    margin-left: 16px;
-    margin-right: 16px;
+    padding: 0 1rem;
+    margin: 0 1rem 2.5rem 1rem;
 }
+.title, .instruction {
+    width: 16rem;
+    margin: 0 auto;
+}
+.title {
+    font-size: 20px;
+    height: 4rem;
+    font-weight: 700;
+    color: var(--Slate900);
+}
+.instruction {
+    font-size: 15px;
+    height: 3.25rem;
+    font-weight: 400;
+    color: var(--Slate500);
+}
+@media (min-width: 1440px) {    
+    .container{
+        margin: 14.4rem auto;
+    }
+}
+@media (min-width: 375px) {
+    .container{
+        margin: 10rem auto;
+    }
+}   
