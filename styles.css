@@ -49,11 +49,11 @@ body {
 }
 @media (min-width: 1440px) {    
     .container{
-        margin: 14.4rem auto;
+        margin: 230.5px auto;
     }
 }
 @media (min-width: 375px) {
     .container{
-        margin: 10rem auto;
+        margin: 156.5px auto;
     }
-}   
+}
